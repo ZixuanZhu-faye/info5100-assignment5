@@ -5,7 +5,10 @@
  */
 package Business.Restaurant;
 
-
+/**
+ *
+ * @author zhuzixuan
+ */
 public class Dishes {
     private String name;
     private String price;

@@ -10,7 +10,10 @@ import Business.UserAccount.UserAccount;
 import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
 import javax.swing.JPanel;
 
-
+/**
+ *
+ * @author zhuzixuan
+ */
 public class SystemAdminRole extends Role{
 
   

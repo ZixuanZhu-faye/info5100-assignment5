@@ -8,7 +8,10 @@ package Business.Restaurant;
 import Business.UserAccount.UserAccount;
 import java.util.ArrayList;
 
-
+/**
+ *
+ * @author zhuzixuan
+ */
 public class RestaurantDirectory {
     private ArrayList<Restaurant> restaurantList;
     private Restaurant restaurant;

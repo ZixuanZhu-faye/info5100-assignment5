@@ -8,7 +8,10 @@ import Business.Employee.Employee;
 import Business.Role.Role;
 import Business.WorkQueue.WorkQueue;
 
-
+/**
+ *
+ * @author zhuzixuan
+ */
 public class UserAccount {
     
     private String name;

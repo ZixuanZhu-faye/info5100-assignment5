@@ -74,29 +74,29 @@ public class ManageInfo extends javax.swing.JPanel {
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setText("Restaurant Name");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 150, -1, -1));
+        jLabel2.setText("Name:");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, -1, -1));
 
-        jLabel3.setText("Phone Number");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 200, -1, -1));
+        jLabel3.setText("Phone:");
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 200, -1, -1));
 
-        jLabel4.setText("Address");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 250, -1, -1));
+        jLabel4.setText("Address:");
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 250, -1, -1));
 
         addressTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addressTxtActionPerformed(evt);
             }
         });
-        add(addressTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 250, 150, -1));
-        add(nameTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 150, 150, -1));
+        add(addressTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, 240, -1));
+        add(nameTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 150, 240, -1));
 
         numTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 numTxtActionPerformed(evt);
             }
         });
-        add(numTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 200, 150, -1));
+        add(numTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 200, 240, -1));
 
         backBtn.setText("<<<Back");
         backBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -112,7 +112,7 @@ public class ManageInfo extends javax.swing.JPanel {
                 SaveBtnActionPerformed(evt);
             }
         });
-        add(SaveBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 360, -1, -1));
+        add(SaveBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 310, -1, -1));
 
         UpdateBtn.setText("Update");
         UpdateBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -120,7 +120,7 @@ public class ManageInfo extends javax.swing.JPanel {
                 UpdateBtnActionPerformed(evt);
             }
         });
-        add(UpdateBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 360, -1, -1));
+        add(UpdateBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 310, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void numTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_numTxtActionPerformed

@@ -38,7 +38,7 @@
                 <Column editable="false" title="Restaurant Name" type="java.lang.Object"/>
                 <Column editable="false" title="Customer Name" type="java.lang.String"/>
                 <Column editable="false" title="Delivery Address" type="java.lang.String"/>
-                <Column editable="false" title="Amount" type="java.lang.String"/>
+                <Column editable="false" title="Total Price" type="java.lang.String"/>
                 <Column editable="false" title="Status" type="java.lang.String"/>
               </Table>
             </Property>

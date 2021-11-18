@@ -57,29 +57,32 @@ public class ManageMenu extends javax.swing.JPanel {
         descTxt = new javax.swing.JTextField();
         deleteBtn = new javax.swing.JButton();
         backBtn = new javax.swing.JButton();
-        addDishBtn = new javax.swing.JButton();
+        saveBtn = new javax.swing.JButton();
+        addBtn = new javax.swing.JButton();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("Description");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 380, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 310, -1, -1));
 
+        amtTxt.setEnabled(false);
         amtTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 amtTxtActionPerformed(evt);
             }
         });
-        add(amtTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 420, 100, -1));
+        add(amtTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 350, 100, -1));
 
         MenuTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
                 {null, null, null},
                 {null, null, null},
+                {null, null, null},
                 {null, null, null}
             },
             new String [] {
-                "Dish Name", "Description", "Prize"
+                "Name", "Description", "Price"
             }
         ) {
             Class[] types = new Class [] {
@@ -99,27 +102,29 @@ public class ManageMenu extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(MenuTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 830, 100));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 830, 100));
 
-        jLabel2.setText("Dish Name");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 330, -1, -1));
+        jLabel2.setText("Name");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 260, -1, -1));
 
+        dishNameTxt.setEnabled(false);
         dishNameTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 dishNameTxtActionPerformed(evt);
             }
         });
-        add(dishNameTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 320, 100, -1));
+        add(dishNameTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 250, 100, -1));
 
-        jLabel3.setText("Amount");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 430, -1, -1));
+        jLabel3.setText("Price");
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 360, -1, -1));
 
+        descTxt.setEnabled(false);
         descTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 descTxtActionPerformed(evt);
             }
         });
-        add(descTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 370, 100, -1));
+        add(descTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 300, 100, -1));
 
         deleteBtn.setText("Delete");
         deleteBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -127,7 +132,7 @@ public class ManageMenu extends javax.swing.JPanel {
                 deleteBtnActionPerformed(evt);
             }
         });
-        add(deleteBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 210, -1, -1));
+        add(deleteBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 200, 130, -1));
 
         backBtn.setText("<<<Back");
         backBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -137,13 +142,22 @@ public class ManageMenu extends javax.swing.JPanel {
         });
         add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
 
-        addDishBtn.setText("Add Dish");
-        addDishBtn.addActionListener(new java.awt.event.ActionListener() {
+        saveBtn.setText("Save");
+        saveBtn.setEnabled(false);
+        saveBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addDishBtnActionPerformed(evt);
+                saveBtnActionPerformed(evt);
             }
         });
-        add(addDishBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 500, -1, -1));
+        add(saveBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 430, -1, -1));
+
+        addBtn.setText("Add");
+        addBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addBtnActionPerformed(evt);
+            }
+        });
+        add(addBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 200, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void amtTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_amtTxtActionPerformed
@@ -158,7 +172,7 @@ public class ManageMenu extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_descTxtActionPerformed
 
-    private void addDishBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addDishBtnActionPerformed
+    private void saveBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveBtnActionPerformed
         // TODO add your handling code here:
         String name=dishNameTxt.getText();
         String desc=descTxt.getText();
@@ -237,9 +251,13 @@ public class ManageMenu extends javax.swing.JPanel {
         dishNameTxt.setText("");
         descTxt.setText("");
         amtTxt.setText("");
+        descTxt.setEnabled(false);
+        amtTxt.setEnabled(false);
+        dishNameTxt.setEnabled(false);
+        saveBtn.setEnabled(false);
         populateTable();
         
-    }//GEN-LAST:event_addDishBtnActionPerformed
+    }//GEN-LAST:event_saveBtnActionPerformed
 
     private void deleteBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteBtnActionPerformed
         // TODO add your handling code here:
@@ -267,6 +285,14 @@ public class ManageMenu extends javax.swing.JPanel {
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_backBtnActionPerformed
+
+    private void addBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBtnActionPerformed
+        // TODO add your handling code here:
+        descTxt.setEnabled(true);
+        amtTxt.setEnabled(true);
+        dishNameTxt.setEnabled(true);
+        saveBtn.setEnabled(true);
+    }//GEN-LAST:event_addBtnActionPerformed
     
     private void populateTable() {
         DefaultTableModel model = (DefaultTableModel) MenuTable.getModel();
@@ -293,7 +319,7 @@ public class ManageMenu extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable MenuTable;
-    private javax.swing.JButton addDishBtn;
+    private javax.swing.JButton addBtn;
     private javax.swing.JTextField amtTxt;
     private javax.swing.JButton backBtn;
     private javax.swing.JButton deleteBtn;
@@ -303,5 +329,6 @@ public class ManageMenu extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton saveBtn;
     // End of variables declaration//GEN-END:variables
 }

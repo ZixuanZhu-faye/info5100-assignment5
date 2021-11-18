@@ -11,7 +11,10 @@ import Business.Restaurant.RestaurantDirectory;
 import Business.Role.Role;
 import java.util.ArrayList;
 
-
+/**
+ *
+ * @author zhuzixuan
+ */
 public class UserAccountDirectory {
    //private RestaurantDirectory resDir;
     private ArrayList<UserAccount> userAccountList;

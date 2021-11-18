@@ -8,7 +8,10 @@ package Business.DeliveryMan;
 
 import java.util.ArrayList;
 
-
+/**
+ *
+ * @author zhuzixuan
+ */
 public class DeliveryManDirectory {
     
     private ArrayList<DeliveryMan> deliveryManList;

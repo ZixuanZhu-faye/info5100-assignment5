@@ -40,7 +40,7 @@ public class AssignDeliveryMan extends javax.swing.JPanel {
         populateNetworkTable();
     }
     private void populateNetworkTable() {
-        jLabel1.setText("Order ID:"+order.getOrder_id());
+        //jLabel1.setText("Order ID:"+order.getOrder_id());
         DefaultTableModel model = (DefaultTableModel) DeliveryManJTable.getModel();
         
         model.setRowCount(0);
@@ -83,7 +83,6 @@ public class AssignDeliveryMan extends javax.swing.JPanel {
         DeliveryManJTable = new javax.swing.JTable();
         AssignOrderBtn = new javax.swing.JButton();
         BackBtn = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -132,9 +131,6 @@ public class AssignDeliveryMan extends javax.swing.JPanel {
             }
         });
         add(BackBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, -1, -1));
-
-        jLabel1.setText("jLabel1");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 60, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void AssignOrderBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AssignOrderBtnActionPerformed
@@ -174,7 +170,6 @@ public class AssignDeliveryMan extends javax.swing.JPanel {
     private javax.swing.JButton AssignOrderBtn;
     private javax.swing.JButton BackBtn;
     private javax.swing.JTable DeliveryManJTable;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }

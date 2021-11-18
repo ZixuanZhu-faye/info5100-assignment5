@@ -39,7 +39,7 @@ public class OrderDetails extends javax.swing.JPanel {
     }
 
     private void populateTable() {
-        jLabel1.setText("Order ID:"+order.getOrder_id());
+        jLabel1.setText(order.getOrder_id());
          DefaultTableModel model = (DefaultTableModel) orderTable.getModel();
         model.setRowCount(0);
         
@@ -75,10 +75,11 @@ public class OrderDetails extends javax.swing.JPanel {
                 {null, null, null},
                 {null, null, null},
                 {null, null, null},
+                {null, null, null},
                 {null, null, null}
             },
             new String [] {
-                "Dish Name", "Description", "Amount"
+                "Name", "Description", "Price"
             }
         ) {
             Class[] types = new Class [] {
@@ -98,7 +99,7 @@ public class OrderDetails extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(orderTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 170, -1, 100));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, 630, 270));
 
         BackBtn.setText("<< Back");
         BackBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -108,16 +109,17 @@ public class OrderDetails extends javax.swing.JPanel {
         });
         add(BackBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, -1, -1));
 
-        jLabel1.setText("Order ID:");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 120, -1, -1));
+        jLabel1.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel1.setText("Order ID");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, 430, 30));
 
-        statusBtn.setText("Change Status to Ready to Deliver");
+        statusBtn.setText("Ready to deliver");
         statusBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 statusBtnActionPerformed(evt);
             }
         });
-        add(statusBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 330, -1, -1));
+        add(statusBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 380, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void BackBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackBtnActionPerformed

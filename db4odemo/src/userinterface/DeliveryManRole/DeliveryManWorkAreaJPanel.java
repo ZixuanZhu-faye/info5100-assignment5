@@ -93,7 +93,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
                 {null, null, null, null, null, null}
             },
             new String [] {
-                "Order Id", "Restaurant Name", "Customer Name", "Delivery Address", "Amount", "Status"
+                "Order Id", "Restaurant Name", "Customer Name", "Delivery Address", "Total Price", "Status"
             }
         ) {
             Class[] types = new Class [] {

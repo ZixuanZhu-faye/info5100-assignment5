@@ -4,7 +4,10 @@
  */
 package Business.Employee;
 
-
+/**
+ *
+ * @author zhuzixuan
+ */
 public class Employee {
     
     private String name;

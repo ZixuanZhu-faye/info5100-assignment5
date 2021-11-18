@@ -6,7 +6,10 @@ package Business.WorkQueue;
 
 import Business.UserAccount.UserAccount;
 import java.util.Date;
-
+/**
+ *
+ * @author zhuzixuan
+ */
 public abstract class WorkRequest {
 
     private String message;

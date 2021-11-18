@@ -9,7 +9,10 @@ import Business.Order.Order;
 import Business.Restaurant.Dishes;
 import java.util.ArrayList;
 
-
+/**
+ *
+ * @author zhuzixuan
+ */
 public class Customer {
     int id=101;
     private String Name;

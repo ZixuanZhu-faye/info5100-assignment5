@@ -6,7 +6,10 @@ package Business.WorkQueue;
 
 import java.util.ArrayList;
 
-
+/**
+ *
+ * @author zhuzixuan
+ */
 public class WorkQueue {
     
     private ArrayList<WorkRequest> workRequestList;

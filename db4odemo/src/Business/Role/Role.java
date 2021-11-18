@@ -10,7 +10,10 @@ import Business.Organization;
 import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;
 
-
+/**
+ *
+ * @author zhuzixuan
+ */
 public abstract class Role {
     
     public enum RoleType{
