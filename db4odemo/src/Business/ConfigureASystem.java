@@ -7,10 +7,7 @@ import Business.Role.DeliverManRole;
 import Business.Role.SystemAdminRole;
 import Business.UserAccount.UserAccount;
 
-/**
- *
- * @author Shubhangi
- */
+
 public class ConfigureASystem {
     
     public static EcoSystem configure(){

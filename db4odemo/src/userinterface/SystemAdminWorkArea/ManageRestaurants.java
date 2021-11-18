@@ -20,7 +20,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Shubhangi
+ * @author zhuzixuan
  */
 public class ManageRestaurants extends javax.swing.JPanel {
 

@@ -19,7 +19,7 @@ import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
 
 /**
  *
- * @author Shubhangi
+ * @author zhuzixuan
  */
 public class ManageMenu extends javax.swing.JPanel {
 

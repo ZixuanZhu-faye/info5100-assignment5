@@ -10,10 +10,7 @@ import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;
 import userinterface.DeliveryManRole.DeliveryManWorkAreaJPanel;
 
-/**
- *
- * @author Shubhangi
- */
+
 public class DeliverManRole extends Role {
 
     @Override

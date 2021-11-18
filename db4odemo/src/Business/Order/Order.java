@@ -8,10 +8,7 @@ package Business.Order;
 import Business.Restaurant.Dishes;
 import java.util.ArrayList;
 
-/**
- *
- * @author Shubhangi
- */
+
 public class Order {
     private String order_id;
 
